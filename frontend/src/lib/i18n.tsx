@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { createContext, useContext, useEffect, useMemo, useState } from 'react';
 
@@ -38,9 +38,9 @@ export const translations = {
     visionLegacyDesc: 'Xây dựng hạ tầng văn hóa, tri thức và trải nghiệm có giá trị vững bền cho tương lai dân tộc Việt.',
     missionTitle: 'SỨ MỆNH',
     missionText:
-      'Những giá trị tốt đẹp được kế thừa và tôn vinh về Văn Minh (khoa học, tổ chức xã hội, lối sống) của Việt Nam để chuyển tải cho các thế hệ tương lai.',
+      'Những giá trị tốt đẹp được kế thừa và tôn vinh về văn minh (khoa học, tổ chức xã hội, lối sống) của Việt Nam để chuyển tải cho các thế hệ tương lai.',
     missionQuote:
-      'Việt Văn Hiến không chỉ là một cái tên, mà đây là một điều cam kết với cha ông đem Văn minh Việt cho các thế hệ tương lai.',
+      'Việt Văn Hiến không chỉ là một cái tên, mà đây là một điều cam kết với cha ông đem văn minh Việt cho các thế hệ tương lai.',
 
     philosophyEyebrow: 'TRIẾT LÝ',
     philosophyTitle: 'TRIẾT LÝ HOẠT ĐỘNG',
@@ -227,7 +227,7 @@ export const translations = {
 
     contactHeading: 'CONTACT',
     contactCompany: 'VIET VAN HIEN JOINT STOCK COMPANY',
-    contactAddress: '546 Pham Van Dong Street, Binh Loi Trung Ward, Ho Chi Minh City',
+    contactAddress: '546 Pham Van Dong, Binh Loi Trung Ward, Ho Chi Minh City',
     contactName: 'Full name',
     contactPhone: 'Phone number',
     contactMessage: 'Message',
