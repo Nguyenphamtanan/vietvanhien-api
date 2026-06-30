@@ -81,6 +81,23 @@ a {
   }
 }
 
+.activity-marquee {
+  width: 100%;
+  overflow: hidden;
+}
+
+.activity-marquee-track {
+  display: flex;
+  width: max-content;
+  gap: 20px;
+  padding: 4px 20px 12px;
+  animation: marquee 42s linear infinite;
+}
+
+.activity-marquee:hover .activity-marquee-track {
+  animation-play-state: paused;
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

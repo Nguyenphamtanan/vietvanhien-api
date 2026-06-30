@@ -3,6 +3,7 @@
 import ContactForm from './ContactForm';
 import { Mail, MapPin, Phone } from 'lucide-react';
 import AboutSection from './AboutSection';
+import ActivityFieldsSection from './ActivityFieldsSection';
 import CoreValuesCommitmentSections from './CoreValuesCommitmentSections';
 import HeroSection from './HeroSection';
 import NewsCard from './NewsCard';
@@ -66,6 +67,8 @@ export default function PublicLanding({ site, projects, newsEvents, partners }: 
         </section>
 
         <CoreValuesCommitmentSections />
+
+        <ActivityFieldsSection />
 
         <ProjectHorizontalScroll projects={projects} />
 
