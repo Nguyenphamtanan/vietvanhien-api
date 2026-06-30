@@ -76,7 +76,7 @@ export default function VisionMissionSection() {
 
         <div className="aspect-video overflow-hidden rounded-[14px] border border-gold/50 bg-[#09152d] shadow-[0_24px_80px_rgba(0,0,0,.35)]">
           <video className="h-full w-full object-cover" autoPlay muted loop playsInline preload="metadata" poster="/images/hero-bg.jpg">
-            <source src="/https://res.cloudinary.com/dpubhoped/video/upload/v1782798142/vision-mission_dgra3y.mp4" type="video/mp4" />
+            <source src="https://res.cloudinary.com/dpubhoped/video/upload/v1782798142/vision-mission_dgra3y.mp4" type="video/mp4" />
           </video>
         </div>
       </div>
