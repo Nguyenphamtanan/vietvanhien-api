@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #0f2042;
+  color: #f8f1df;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.section {
+  padding: 80px 0;
+}
+
+.container {
+  width: min(1180px, calc(100% - 32px));
+  margin: 0 auto;
+}
+
+.admin-input {
+  width: 100%;
+  border: 1px solid #d8cfbd;
+  border-radius: 8px;
+  background: #fffdf8;
+  padding: 10px 12px;
+  outline: none;
+}
+
+.admin-input:focus {
+  border-color: #d4af37;
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.16);
+}
+
+.public-shell {
+  font-family: var(--font-gotham), Arial, sans-serif;
+  background:
+    radial-gradient(circle at 20% 0%, rgba(128, 0, 32, 0.34), transparent 36rem),
+    linear-gradient(135deg, #0f2042 0%, #121c35 52%, #800020 120%);
+}
+
+.gold-underline {
+  position: relative;
+}
+
+.gold-underline::after {
+  position: absolute;
+  left: 0;
+  bottom: -7px;
+  width: 0;
+  height: 2px;
+  content: '';
+  background: #d4af37;
+  transition: width 180ms ease;
+}
+
+.gold-underline:hover::after,
+.gold-underline:focus-visible::after {
+  width: 100%;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
