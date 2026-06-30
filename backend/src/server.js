@@ -12,7 +12,24 @@ dotenv.config();
 const app = express();
 const port = process.env.PORT || 5000;
 
-app.use(cors({ origin: process.env.CLIENT_URL || 'http://localhost:3000' }));
+const allowedOrigins = (process.env.CLIENT_URL || 'http://localhost:3000')
+  .split(',')
+  .map((origin) => origin.trim())
+  .filter(Boolean);
+
+app.use(
+  cors({
+    origin(origin, callback) {
+      if (!origin || allowedOrigins.includes(origin)) {
+        return callback(null, true);
+      }
+
+      return callback(new Error(`Not allowed by CORS: ${origin}`));
+    },
+    credentials: true
+  })
+);
+
 app.use(express.json());
 app.use('/uploads', express.static(path.resolve('uploads')));
 
