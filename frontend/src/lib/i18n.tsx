@@ -86,6 +86,8 @@ export const translations = {
     activityFieldsMenu: 'Lĩnh vực hoạt động',
     activityFieldsEyebrow: 'HỆ SINH THÁI',
     activityFieldsTitle: 'Lĩnh vực hoạt động',
+    activityFieldsDescription:
+      'Nghiên cứu - phục dựng - sáng tạo - giáo dục - công nghệ - truyền thông - trải nghiệm công chúng được kết nối trong một cấu trúc chiến lược thống nhất.',
     viewAllFields: 'Xem tất cả lĩnh vực',
     explore: 'Khám phá',
     fieldCategory: 'Lĩnh vực hoạt động',
