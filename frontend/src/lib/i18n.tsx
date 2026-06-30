@@ -137,7 +137,7 @@ export const translations = {
     projects: 'Projects',
     news: 'News',
     contact: 'Contact',
-    slogan: 'A THOUSAND-YEAR LAND, A GOLDEN FOUNDATION',
+    slogan: 'A Thousand-year land, A Golden Foundation',
 
     aboutEyebrow: 'VIET VAN HIEN',
     aboutTitle: 'WHO WE ARE',
