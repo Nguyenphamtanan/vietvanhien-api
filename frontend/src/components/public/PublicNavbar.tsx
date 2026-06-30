@@ -72,8 +72,8 @@ export default function PublicNavbar() {
             {t('slogan')}
           </div>
 
-          <div className="pointer-events-none max-w-[145px] justify-self-center whitespace-normal text-center font-thuphap text-[15px] leading-none text-gold lg:hidden">
-            <span className="block">Non Sông nghìn thuở</span>
+          <div className="pointer-events-none flex max-w-[145px] flex-col items-center justify-center justify-self-center whitespace-normal text-center font-thuphap text-[14px] leading-[1.15] tracking-[0.02em] text-gold min-[430px]:text-[15px] lg:hidden">
+            <span className="mb-1 block">Non Sông nghìn thuở</span>
             <span className="block">Vững Âu Vàng</span>
           </div>
 

@@ -5,7 +5,7 @@ import { LanguageProvider } from '@/lib/i18n';
 
 export const metadata: Metadata = {
   title: 'Việt Văn Hiến',
-  description: 'Website demo công ty Việt Văn Hiến'
+  description: 'Website công ty Việt Văn Hiến'
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
