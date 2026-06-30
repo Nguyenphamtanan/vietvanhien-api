@@ -69,7 +69,7 @@ export default function PublicFooter() {
       </div>
 
       <div className="bg-white">
-        <img className="block h-auto w-full" src="/images/slogan-banner.png" alt="Non sông nghìn thuở vững âu vàng" />
+        <img className="block h-auto w-full" src="/images/Slogan-banner.png" alt="Non sông nghìn thuở vững âu vàng" />
       </div>
     </footer>
   );
