@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import ContactForm from './ContactForm';
 import { Mail, MapPin, Phone } from 'lucide-react';
@@ -86,7 +86,7 @@ export default function PublicLanding({ site, projects, newsEvents, partners }: 
                 <p className="font-din text-[34px] leading-none text-gold md:text-[44px]">{t('contactHeading')}</p>
                 <p className="mt-5 font-gothamBook text-[16px] text-white">{t('contactCompany')}</p>
                 <div className="mt-4 space-y-2 text-sm leading-5 text-[#d7dce5] md:text-[15px]">
-                  <p className="flex items-start gap-3"><MapPin className="mt-0.5 shrink-0 text-gold" size={17} />546 Phạm Văn Đồng, Phường Bình Lợi Trung, TP.HCM</p>
+                  <p className="flex items-start gap-3"><MapPin className="mt-0.5 shrink-0 text-gold" size={17} />{t('contactAddress')}</p>
                   <p className="flex items-center gap-3"><Mail className="shrink-0 text-gold" size={17} />contact@vietvanhien.com</p>
                   <p className="flex items-center gap-3"><Phone className="shrink-0 text-gold" size={17} />899 199 799</p>
                 </div>
@@ -100,3 +100,4 @@ export default function PublicLanding({ site, projects, newsEvents, partners }: 
     </div>
   );
 }
+
