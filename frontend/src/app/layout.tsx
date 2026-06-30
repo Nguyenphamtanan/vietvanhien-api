@@ -5,7 +5,15 @@ import { LanguageProvider } from '@/lib/i18n';
 
 export const metadata: Metadata = {
   title: 'Việt Văn Hiến',
-  description: 'Website công ty Việt Văn Hiến'
+  description: 'Công ty Cổ phần Việt Văn Hiến - Non Sông Nghìn Thuở, Vững Âu Vàng.',
+  openGraph: {
+    title: 'Việt Văn Hiến',
+    description: 'Công ty Cổ phần Việt Văn Hiến - Non Sông Nghìn Thuở, Vững Âu Vàng.',
+    url: 'https://www.vietvanhien.com',
+    siteName: 'Việt Văn Hiến',
+    images: ['/images/logo-vvh.png'],
+    type: 'website'
+  }
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
