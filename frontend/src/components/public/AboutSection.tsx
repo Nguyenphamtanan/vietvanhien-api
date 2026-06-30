@@ -35,7 +35,7 @@ export default function AboutSection() {
       <div className="mx-auto grid w-[min(1280px,calc(100%-36px))] gap-9 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:gap-[72px]">
         <div className="aspect-[16/10] overflow-hidden rounded-[14px] border border-gold/25 bg-deepBlue shadow-[0_20px_50px_rgba(0,0,0,.24)]">
           <video className="h-full w-full object-cover" autoPlay muted loop playsInline preload="metadata" poster="/images/hero-bg.jpg">
-            <source src="https://res.cloudinary.com/dpubhoped/video/upload/v1782798142/hero_h8hkbd.mp4" type="video/mp4" />
+            <source src="https://res.cloudinary.com/dpubhoped/video/upload/v1782813478/hero_snjwbr.mp4" type="video/mp4" />
           </video>
         </div>
 
