@@ -10,7 +10,7 @@ export const translations = {
     projects: 'Dự án',
     news: 'Tin tức',
     contact: 'Liên hệ',
-    slogan: 'NON SÔNG NGHÌN THUỞ - VỮNG ÂU VÀNG',
+    slogan: 'Non Sông nghìn thuở - Vững Âu Vàng',
 
     aboutEyebrow: 'VIỆT VĂN HIẾN',
     aboutTitle: 'CHÚNG TÔI LÀ AI',
