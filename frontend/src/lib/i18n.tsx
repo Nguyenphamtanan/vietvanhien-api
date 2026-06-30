@@ -45,7 +45,7 @@ export const translations = {
     philosophyEyebrow: 'TRIẾT LÝ',
     philosophyTitle: 'TRIẾT LÝ HOẠT ĐỘNG',
     philosophyText:
-      'Văn Minh Việt hoạt động dựa trên triết lý: di sản chỉ thực sự có tương lai khi hòa nhập vào đời sống hiện đại. Bảo tồn là nền tảng, nhưng tái tạo sức sống cho di sản mới là mục tiêu hàng đầu. Chúng tôi không coi truyền thống và hiện đại là hai thái cực đối lập mà đặt chúng trong mối quan hệ cộng hưởng, tương hỗ.',
+      'Việt Văn Hiến hoạt động dựa trên triết lý: di sản chỉ thực sự có tương lai khi hòa nhập vào đời sống hiện đại. Bảo tồn là nền tảng, nhưng tái tạo sức sống cho di sản mới là mục tiêu hàng đầu. Chúng tôi không coi truyền thống và hiện đại là hai thái cực đối lập mà đặt chúng trong mối quan hệ cộng hưởng, tương hỗ.',
     philosophyTradition: 'Truyền thống',
     philosophyTraditionDesc: 'Cung cấp chiều sâu, bản sắc và các giá trị cốt lõi.',
     philosophyModernity: 'Hiện đại',
@@ -57,7 +57,7 @@ export const translations = {
     philosophyCreativity: 'Sáng tạo',
     philosophyCreativityDesc: 'Giúp bản sắc vững bước vào tương lai.',
     philosophyQuote:
-      '“Văn Minh Việt hướng đến mục tiêu trở thành một tổ chức văn hóa tầm vóc, vừa đảm bảo chiều sâu học thuật, vừa sở hữu năng lực sáng tạo và ứng dụng công nghệ để tạo ra những giá trị bền vững, lan tỏa rộng khắp.”',
+      '“Việt Văn Hiến hướng đến mục tiêu trở thành một tổ chức văn hóa tầm vóc, vừa đảm bảo chiều sâu học thuật, vừa sở hữu năng lực sáng tạo và ứng dụng công nghệ để tạo ra những giá trị bền vững, lan tỏa rộng khắp.”',
 
     coreValuesTitle: 'GIÁ TRỊ CỐT LÕI',
     coreNationalPride: 'Tự Hào Dân Tộc',
@@ -171,7 +171,7 @@ export const translations = {
     philosophyEyebrow: 'PHILOSOPHY',
     philosophyTitle: 'OPERATING PHILOSOPHY',
     philosophyText:
-      'Văn Minh Việt operates on the belief that heritage only has a future when it enters modern life. Preservation is the foundation, but renewing the vitality of heritage is the ultimate goal. We do not see tradition and modernity as opposites, but as forces that resonate and support one another.',
+      'Viet Van Hien operates on the belief that heritage only has a future when it enters modern life. Preservation is the foundation, but renewing the vitality of heritage is the ultimate goal. We do not see tradition and modernity as opposites, but as forces that resonate and support one another.',
     philosophyTradition: 'Tradition',
     philosophyTraditionDesc: 'Provides depth, identity, and core values.',
     philosophyModernity: 'Modernity',
@@ -183,7 +183,7 @@ export const translations = {
     philosophyCreativity: 'Creativity',
     philosophyCreativityDesc: 'Helps identity move confidently into the future.',
     philosophyQuote:
-      '“Văn Minh Việt aims to become a cultural organization of stature, combining academic depth with creative capacity and technological application to create sustainable values with broad impact.”',
+      '“Viet Van Hien aims to become a cultural organization of stature, combining academic depth with creative capacity and technological application to create sustainable values with broad impact.”',
 
     coreValuesTitle: 'CORE VALUES',
     coreNationalPride: 'National Pride',
