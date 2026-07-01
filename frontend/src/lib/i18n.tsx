@@ -10,7 +10,7 @@ export const translations = {
     projects: 'Dự án',
     news: 'Tin tức',
     contact: 'Liên hệ',
-    slogan: 'Non Sông nghìn thuở - Vững Âu Vàng',
+    slogan: 'Non Sông nghìn thuở - Vững \u00c2u Vàng',
 
     aboutEyebrow: 'VIỆT VĂN HIẾN',
     aboutTitle: 'CHÚNG TÔI LÀ AI',
@@ -29,7 +29,7 @@ export const translations = {
     visionMissionEyebrow: 'TẦM NHÌN & SỨ MỆNH',
     visionTitle: 'TẦM NHÌN',
     visionText: 'Xây dựng hạ tầng văn hóa, tri thức và trải nghiệm cho tương lai.',
-    visionSubheading: 'GIÁ TRỊ CỐT LÕI: NHÂN VĂN - TỰ TÔN - TRƯỜNG TỒN',
+    visionSubheading: 'GIÁ TRỊ CỐT LÕI: NH\u00c2N VĂN - TỰ TÔN - TRƯỜNG TỒN',
     visionHumanism: 'Nhân văn',
     visionHumanismDesc: 'Nuôi dưỡng nhân cách, tinh thần cộng đồng, tri thức, lòng biết ơn và ý thức công dân.',
     visionPride: 'Tự tôn',

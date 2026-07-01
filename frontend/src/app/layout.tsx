@@ -3,12 +3,14 @@ import './globals.css';
 import { dinCondensed, gotham, gothamBold, thuPhapThienAn } from '@/lib/fonts';
 import { LanguageProvider } from '@/lib/i18n';
 
+const siteDescription = 'Công ty Cổ phần Việt Văn Hiến - Non Sông Nghìn Thuở, Vững \u00c2u Vàng.';
+
 export const metadata: Metadata = {
   title: 'Việt Văn Hiến',
-  description: 'Công ty Cổ phần Việt Văn Hiến - Non Sông Nghìn Thuở, Vững Âu Vàng.',
+  description: siteDescription,
   openGraph: {
     title: 'Việt Văn Hiến',
-    description: 'Công ty Cổ phần Việt Văn Hiến - Non Sông Nghìn Thuở, Vững Âu Vàng.',
+    description: siteDescription,
     url: 'https://www.vietvanhien.com',
     siteName: 'Việt Văn Hiến',
     images: ['/images/logo-vvh.png'],
