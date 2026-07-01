@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { AnimatePresence, motion } from 'framer-motion';
 import { ArrowUpRight, ChevronDown, Menu, X } from 'lucide-react';
@@ -65,15 +65,15 @@ export default function PublicNavbar() {
       <header className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-deepBlue/82 text-white backdrop-blur-xl">
         <div className="grid h-20 w-full grid-cols-[auto_1fr_auto_auto] items-center gap-2 px-4 lg:grid-cols-[auto_1fr_auto] lg:gap-5 lg:px-10 min-[1440px]:px-14">
           <Link href="/" className="group flex items-center gap-3" onClick={closeMenus}>
-            <img className="h-12 w-12 object-contain lg:h-14 lg:w-14" src="/images/logo-vvh.png" alt="Việt Văn Hiến" />
+            <img className="h-12 w-12 object-contain lg:h-14 lg:w-14" src="/images/logo-vvh.png" alt="Viá»‡t VÄƒn Hiáº¿n" />
           </Link>
 
           <div className="pointer-events-none hidden max-w-[520px] justify-self-center overflow-visible whitespace-nowrap text-center font-thuphap text-[22px] leading-none tracking-[0.02em] text-gold xl:block min-[2048px]:text-[24px]">
             {t('slogan')}
           </div>
 
-          <div className="pointer-events-none flex max-w-[145px] flex-col items-center justify-center justify-self-center whitespace-normal text-center font-thuphap text-[14px] leading-[1.15] tracking-[0.02em] text-gold min-[430px]:text-[15px] lg:hidden">
-            <span className="mb-1 block">Non Sông nghìn thuở</span>
+          <div className="pointer-events-none flex max-w-[150px] translate-y-1 flex-col items-center justify-center justify-self-center whitespace-normal text-center font-thuphap text-[18px] leading-[1.15] tracking-[0.01em] text-gold md:hidden">
+            <span className="mb-[3px] block">Non Sông nghìn thuở</span>
             <span className="block">Vững Âu Vàng</span>
           </div>
 
@@ -109,7 +109,7 @@ export default function PublicNavbar() {
                 type="button"
                 className="ml-[18px] flex h-12 w-12 items-center justify-center rounded-full border border-white/35 text-white transition hover:border-gold hover:text-gold"
                 onClick={() => setDrawerOpen(true)}
-                aria-label={locale === 'en' ? 'Open latest updates' : 'Mở cập nhật mới'}
+                aria-label={locale === 'en' ? 'Open latest updates' : 'Má»Ÿ cáº­p nháº­t má»›i'}
               >
                 <Menu size={22} />
               </button>
@@ -122,7 +122,7 @@ export default function PublicNavbar() {
               <LanguageSwitcher />
             </div>
           </div>
-          <button className="justify-self-end rounded-lg border border-white/15 p-2 text-white lg:hidden" onClick={() => setMobileOpen((value) => !value)} title={locale === 'en' ? 'Open menu' : 'Mở menu'}>
+          <button className="justify-self-end rounded-lg border border-white/15 p-2 text-white lg:hidden" onClick={() => setMobileOpen((value) => !value)} title={locale === 'en' ? 'Open menu' : 'Má»Ÿ menu'}>
             {mobileOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
@@ -155,7 +155,7 @@ export default function PublicNavbar() {
             <motion.button
               type="button"
               className="fixed inset-0 z-[60] cursor-default bg-black/55"
-              aria-label={locale === 'en' ? 'Close latest updates' : 'Đóng cập nhật mới'}
+              aria-label={locale === 'en' ? 'Close latest updates' : 'ÄÃ³ng cáº­p nháº­t má»›i'}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
@@ -171,16 +171,16 @@ export default function PublicNavbar() {
             >
               <div className="flex items-start justify-between gap-6">
                 <div>
-                  <p className="font-din text-[13px] uppercase tracking-[0.18em] text-gold">{locale === 'en' ? 'LATEST UPDATES' : 'CẬP NHẬT MỚI'}</p>
+                  <p className="font-din text-[13px] uppercase tracking-[0.18em] text-gold">{locale === 'en' ? 'LATEST UPDATES' : 'Cáº¬P NHáº¬T Má»šI'}</p>
                   <p className="mt-3 text-sm leading-6 text-white/65">
-                    {locale === 'en' ? 'News, events and latest activities from Việt Văn Hiến.' : 'Tin tức, sự kiện và hoạt động mới nhất từ Việt Văn Hiến.'}
+                    {locale === 'en' ? 'News, events and latest activities from Viá»‡t VÄƒn Hiáº¿n.' : 'Tin tá»©c, sá»± kiá»‡n vÃ  hoáº¡t Ä‘á»™ng má»›i nháº¥t tá»« Viá»‡t VÄƒn Hiáº¿n.'}
                   </p>
                 </div>
                 <button
                   type="button"
                   className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-white/20 text-white transition hover:border-gold hover:text-gold"
                   onClick={closeDrawer}
-                  aria-label={locale === 'en' ? 'Close latest updates' : 'Đóng cập nhật mới'}
+                  aria-label={locale === 'en' ? 'Close latest updates' : 'ÄÃ³ng cáº­p nháº­t má»›i'}
                 >
                   <X size={20} />
                 </button>
@@ -190,7 +190,7 @@ export default function PublicNavbar() {
                 {latestNews.length ? (
                   latestNews.map((item) => <DrawerNewsItem key={item._id} item={item} locale={locale} onNavigate={closeDrawer} />)
                 ) : (
-                  <p className="border-y border-white/10 py-8 text-sm text-white/60">{locale === 'en' ? 'No updates yet.' : 'Chưa có cập nhật mới.'}</p>
+                  <p className="border-y border-white/10 py-8 text-sm text-white/60">{locale === 'en' ? 'No updates yet.' : 'ChÆ°a cÃ³ cáº­p nháº­t má»›i.'}</p>
                 )}
               </div>
 
@@ -200,14 +200,14 @@ export default function PublicNavbar() {
                   onClick={closeDrawer}
                   className="rounded-full border border-gold/50 px-5 py-3 text-center font-din text-sm uppercase tracking-[0.12em] text-gold transition hover:bg-gold hover:text-deepBlue"
                 >
-                  {locale === 'en' ? 'View all news' : 'Xem tất cả tin tức'}
+                  {locale === 'en' ? 'View all news' : 'Xem táº¥t cáº£ tin tá»©c'}
                 </Link>
                 <a
                   href="/#contact"
                   onClick={closeDrawer}
                   className="rounded-full bg-gold px-5 py-3 text-center font-din text-sm uppercase tracking-[0.12em] text-deepBlue transition hover:bg-white"
                 >
-                  {locale === 'en' ? 'Contact for partnership' : 'Liên hệ hợp tác'}
+                  {locale === 'en' ? 'Contact for partnership' : 'LiÃªn há»‡ há»£p tÃ¡c'}
                 </a>
               </div>
             </motion.aside>
@@ -220,7 +220,7 @@ export default function PublicNavbar() {
 
 function DrawerNewsItem({ item, locale, onNavigate }: { item: NewsEvent; locale: 'vi' | 'en'; onNavigate: () => void }) {
   const date = new Intl.DateTimeFormat(locale === 'en' ? 'en-US' : 'vi-VN', { dateStyle: 'medium' }).format(new Date(item.eventDate));
-  const badge = item.type === 'event' ? (locale === 'en' ? 'EVENT' : 'SỰ KIỆN') : locale === 'en' ? 'NEWS' : 'TIN TỨC';
+  const badge = item.type === 'event' ? (locale === 'en' ? 'EVENT' : 'Sá»° KIá»†N') : locale === 'en' ? 'NEWS' : 'TIN Tá»¨C';
 
   return (
     <Link href={`/news/${item._id}`} onClick={onNavigate} className="group block border-b border-white/10 py-[18px]">
@@ -231,8 +231,10 @@ function DrawerNewsItem({ item, locale, onNavigate }: { item: NewsEvent; locale:
       <h3 className="mt-3 font-din text-xl leading-tight text-white transition group-hover:text-gold">{item.title}</h3>
       <p className="mt-2 line-clamp-2 text-sm leading-6 text-white/65">{item.summary}</p>
       <span className="mt-4 inline-flex items-center gap-2 font-din text-sm uppercase tracking-[0.08em] text-gold">
-        {locale === 'en' ? 'Read more' : 'Xem thêm'} <ArrowUpRight size={15} />
+        {locale === 'en' ? 'Read more' : 'Xem thÃªm'} <ArrowUpRight size={15} />
       </span>
     </Link>
   );
 }
+
+

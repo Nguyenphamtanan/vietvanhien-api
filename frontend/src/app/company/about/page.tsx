@@ -1,22 +1,35 @@
+'use client';
+
 import CompanyPageLayout from '@/components/public/CompanyPageLayout';
+import { useLanguage, type TranslationKey } from '@/lib/i18n';
+
+const paragraphs: TranslationKey[] = ['companyAboutP1', 'companyAboutP2', 'companyAboutP3'];
+const modelItems: TranslationKey[] = ['companyAboutModel1', 'companyAboutModel2', 'companyAboutModel3'];
 
 export default function CompanyAboutPage() {
+  const { t } = useLanguage();
+
   return (
     <CompanyPageLayout
-      title="Chúng tôi là ai"
-      description="Một tổ chức văn hóa sáng tạo đặt bản sắc Việt Nam ở trung tâm của nghiên cứu, phục dựng và trải nghiệm đương đại."
+      title={t('companyAboutTitle')}
+      description={t('companyAboutDescription')}
     >
       <div className="grid gap-10 md:grid-cols-[0.85fr_1.15fr]">
-        <p className="font-din text-[13px] uppercase tracking-[0.18em] text-gold"></p>
+        <div>
+          <p className="font-din text-[13px] uppercase tracking-[0.18em] text-gold">{t('companyAboutModelTitle')}</p>
+          <div className="mt-6 space-y-4">
+            {modelItems.map((item, index) => (
+              <article key={item} className="rounded-lg border border-white/10 bg-white/[0.04] p-5 transition hover:border-gold/60">
+                <span className="font-din text-2xl text-gold">{String(index + 1).padStart(2, '0')}</span>
+                <p className="mt-3 text-sm leading-7 text-white/75">{t(item)}</p>
+              </article>
+            ))}
+          </div>
+        </div>
         <div className="space-y-5 text-sm leading-7 text-white/75 md:text-[16px]">
-          <p>
-            Việt Văn Hiến là tổ chức định hướng nghiên cứu, xây dựng, phát triển và quảng bá các giá trị văn học, lịch sử,
-            di sản văn hóa, điện ảnh, nghệ thuật, khảo cổ và công nghệ giải trí gắn với bản sắc Việt Nam.
-          </p>
-          <p>
-            Chúng tôi theo đuổi mô hình tích hợp giữa nghiên cứu, phục dựng, sáng tạo, giáo dục, công nghệ và trải nghiệm,
-            để tri thức văn hiến không chỉ được lưu giữ mà còn được sống trong cộng đồng hôm nay.
-          </p>
+          {paragraphs.map((paragraph) => (
+            <p key={paragraph}>{t(paragraph)}</p>
+          ))}
         </div>
       </div>
     </CompanyPageLayout>
